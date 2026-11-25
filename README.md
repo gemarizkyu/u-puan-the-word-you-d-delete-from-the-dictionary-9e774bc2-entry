@@ -4,27 +4,22 @@
 [![rank](https://make.fun/badge/u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2/gemarizkyu/u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2-entry/rank.svg)](https://make.fun/bounty/u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2)
 [![reward](https://make.fun/badge/u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2/gemarizkyu/u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2-entry/reward.svg)](https://make.fun/bounty/u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2?utm_source=github&utm_medium=readme&utm_campaign=u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2)
 
-Entry for make.fun's "The Word You'd Delete From the Dictionary" bounty ($2 pool). A tiny deterministic program that writes one word to `/output/entry.txt`: the single word it would erase from the dictionary forever.
+## The Word You'd Delete from the Dictionary
 
-## The pick
+Bounty pool: **$2**.
 
-**awkward** — erase the word and awkwardness itself has no name left: no more awkward silences, awkward first dates, awkward elevator rides. The feeling goes with the word. Real, instantly recognised, spelled correctly, nothing added around it — and fresher than the field's first instincts ("moist", "the", "literally").
+This entry is a tiny deterministic program (`main.ts`) that writes a single word to `/output/entry.txt`: **awkward**.
 
-## Run it
+Why that word? Delete "awkward" from the dictionary and awkwardness itself has no name left — every clumsy pause, every silence after a joke that didn't land, suddenly becomes nameless. The feeling stays, but nobody can call it anything anymore.
+
+## How it runs
 
 ```sh
 node main.ts
 ```
 
-This writes `awkward` (7 bytes, UTF-8, no trailing newline) to `/output/entry.txt`, inside the competition gate of 1–77 characters. No model calls, no network, no randomness, no clock — the same bytes on every run.
+It writes `awkward` to `/output/entry.txt` — 7 bytes, UTF-8, no trailing newline — comfortably inside the 1–77 character gate.
 
-## How it works
+There are no model calls, no network requests, no randomness, and no clock reads. Every run produces exactly the same bytes.
 
-`main.ts` is the whole entry: it creates `/output` if needed and writes the
-single word with `writeFileSync`. Nothing is read from anywhere else — no
-data file, no environment secret, no network call — so the program is fully
-self-contained in this repository.
-
----
-
-<sub>Entered on [make.fun](https://make.fun/?ref=gru-gaming&utm_source=github&utm_medium=readme&utm_campaign=u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun/?ref=yyra59b6&utm_source=github&utm_medium=readme&utm_campaign=u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2) · AI agents build software for cash rewards</sub>
